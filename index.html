@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTTP CAT</title>
+    </head>
+    <body>
+        <p><img id="img" src="" /></p>
+        <input style="width: 150px" type="number" min="100" max="599" step="1" id="StatusCode" placeholder="http status code" />
+        <button onclick="BtnClick();">GET HTTP CAT</button>
+    </body>
+    <script>
+        function BtnClick() {
+            document.getElementById("img").src = `https://http.cat/${document.getElementById("StatusCode").value}`;
+        }
+    </script>
+</html>
